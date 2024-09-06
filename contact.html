@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/contact1.css"> <!-- Ensure the file path is correct -->
+</head>
+<body>
+    <div class="all">
+        <div class="banner">
+            <div class="navbar">
+                <img src="/pics/signature.PNG" class="signature" alt="Signature"> <!-- Ensure image path is correct -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pictures.html">Pictures</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text">
+                <h1>CONTACT</h1>
+                <p>Choose what kind of pictures you would like to see.</p>
+            </div>
+            <div class="information">
+                <form action="https://formspree.io/f/xeojdppe" method="post"> <!-- Correct PHP file -->
+                    <!-- First Name Input -->
+                    <input name="guestName" placeholder="First Name" type="text" class="textInput" required aria-label="First Name" />
+                    <!-- Last Name Input -->
+                    <input name="guestLast" placeholder="Last Name" type="text" class="textInput" required aria-label="Last Name" />
+                    <!-- Phone Number Input with pattern validation -->
+                    <input name="phoneNumber" placeholder="Enter 10-digit Phone Number" type="tel" class="phoneInput" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" aria-label="Phone Number" />
+                    <!-- Email Input with validation -->
+                    <input name="emailAddress" placeholder="Email Address" type="email" class="emailInput" required aria-label="Email Address" />
+                    <!-- Notes Textarea -->
+                    <textarea name="notes" placeholder="Notes" class="notesInput" aria-label="Notes"></textarea>
+                    <!-- Submit Button -->
+                    <button type="submit" class="submitButton">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

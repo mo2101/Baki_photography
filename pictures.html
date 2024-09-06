@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="css/pics1.css">
+</head>
+<body>
+    <div class="all">
+        <div class="banner">
+            <div class="navbar">
+                <img src="/pics/signature.PNG" class="signature" alt="Signature">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pictures.html">Pictures</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </div>
+            <div class="text">
+                <h1>PICTURES</h1>
+                <p>Choose what kind of pictures would you like to see.</p>
+            </div>
+            <div class="cards">
+                    <span class="card red" data-link="cars.html">
+                    <h1 class="tip">CARS</h1>
+                    <p class="second-text">Click Here</p>
+                    </span>
+                <div class="card green" data-link="portrait.html">
+                    <h1 class="tip">PORTRAIT</h1>
+                    <p class="second-text">Click Here</p>
+                </div>
+                <div class="card blue" data-link="city.html">
+                    <h1 class="tip">CITY</h1>
+                    <p class="second-text">Click Here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                window.location.href = card.getAttribute('data-link');
+            });
+        });
+    </script>
+</body>
+</html>

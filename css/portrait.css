@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e7760;
+    background-size: cover;
+    background-position: center;
+  }
+  .banner {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Vertically align content */
+  }
+  
+  .navbar {
+    width: 85%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .signature {
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar ul li {
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f06553;
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+    transition: width 0.4s;
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  
+  .contentone {
+    width: 100%;
+    text-align: center;
+    margin: auto; /* Center vertically */
+    color: #fff;
+    font-size: 250%;
+    margin-bottom: 15px;
+  }
+  
+  .contentone h1 {
+    font-size: 100px;
+    margin: 10px 0;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto; /* Center the cards container */
+    justify-content: center;
+  }
+  
+  .card {
+    flex: 1 1 calc(33.333% - 30px); /* Responsive width */
+    min-width: 200px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    border-radius: 10px;
+    color: rgb(207, 177, 4);
+    cursor: pointer;
+    transition: transform 400ms ease;
+  }
+  
+  .cards .red { background-image: url(/pics/portrait/por\ \(31\).JPG);
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 100%;
+  }
+  .cards .blue { background-image: url(/pics/portrait/por\ \(37\).jpg);
+  background-size: cover;
+  background-position: center; }
+  .cards .green { background-image: url(/pics/portrait/por\ \(18\).jpg); 
+  background-size: cover;
+  background-position-y: center;
+  }
+  .cards .yellow { background-image: url(/pics/portrait/por\ \(8\).jpg);
+  background-size: cover;
+  background-position: center; }
+  .cards .teal { background-image: url(/pics/portrait/por\ \(33\).JPG);
+  background-size: cover;
+  background-position: center right 40%; }
+  .cards .magenta { background-image: url(/pics/portrait/moe.JPG);
+  background-size: cover; 
+  background-position-y: center;}
+  .cards .zed { background-image: url(/pics/portrait/por\ \(32\).JPG); 
+  background-size: cover;
+  background-position-y: 65%;
+  background-position-x: 10%;
+  }
+  .cards .a7mr{
+    background-image: url(/pics/portrait/por\ \(7\).jpg);
+    background-size: cover;
+    background-position-y: center;
+  }
+  .cards .a5dr{
+    background-image: url(/pics/portrait/por\ \(3\).jpg);
+    background-size: cover;
+    background-position: center right 48%;
+  }
+  .cards .psrt{
+    background-image: url(/pics/portrait/por\ \(17\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .cards .bmwb{
+    background-image: url(/pics/portrait/por\ \(10\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .cards .wporsche{
+    background-image: url(/pics/portrait/por\ \(11\).jpg);
+    background-size: cover;
+    background-position: center right 5%;
+  }
+  .cards .redsrt{
+    background-image: url(/pics/portrait/por\ \(12\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .cards .yellcar{
+    background-image: url(/pics/portrait/por\ \(13\).jpg);
+    background-size: cover;
+    background-position: center right 11%;
+  }
+  .cards .salbike{
+    background-image: url(/pics/portrait/por\ \(9\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .cards .wchall{
+    background-image: url(/pics/portrait/por\ \(44\).jpg);
+    background-size: cover;
+    background-position: center right 25%;
+  }
+  .cards .wchalle{
+    background-image: url(/pics/portrait/por\ \(16\).jpg);
+    background-size: cover;
+    background-position: center right 40%;
+  }
+  .cards .bporsche{
+    background-image: url(/pics/portrait/por\ \(34\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .cards .blambo{
+    background-image: url(/pics/portrait/por\ \(34\).jpg);
+    background-size: cover;
+  }
+  .cards .last{
+    background-image: url(/pics/portrait/por\ \(26\).jpg);
+    background-size: cover;
+  }
+  .cards .one{
+    background-image: url(/pics/portrait/por\ \(20\).jpg);
+    background-size: cover;
+    background-position: center;
+  }.cards .two{
+    background-image: url(/pics/portrait/por\ \(21\).jpg);
+    background-size: cover;
+    background-position: center;
+  }.cards .three{
+    background-image: url(/pics/portrait/por\ \(22\).jpg);
+    background-size: cover;
+  }.cards .four{
+    background-image: url(/pics/portrait/por\ \(27\).jpg);
+    background-size: cover;
+  }.cards .five{
+    background-image: url(/pics/portrait/por\ \(36\).jpg);
+    background-size: cover;
+    background-position: center right 60%;
+  }.cards .six{
+    background-image: url(/pics/portrait/por\ \(25\).jpg);
+    background-size: cover;
+  }.cards .seven{
+    background-image: url(/pics/portrait/por\ \(41\).jpg);
+    background-size: cover;
+    background-position: center right 65%;
+  }.cards .nine{
+    background-image: url(/pics/portrait/por\ \(19\).jpg);
+    background-size: cover;
+  }.cards .eleven{
+    background-image: url(/pics/portrait/por\ \(23\).jpg);
+    background-size: cover;
+    
+  }.cards .twelve{
+    background-image: url(/pics/portrait/por\ \(29\).jpg);
+    background-size: 120%;
+    background-position: center;
+  }.cards .thirteen{
+    background-image: url(/pics/portrait/por\ \(30\).jpg);
+    background-size: cover;
+  }
+  .cards .fourteen{
+    background-image: url(/pics/portrait/por.jpeg);
+    background-size: cover;}
+.cards .fifteen{
+    background-image: url(/pics/portrait/por\ \(6\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cards .sixteen{
+    background-image: url(/pics/portrait/por\ \(4\).jpg);
+    background-size: cover;
+  }.cards .eighteen{
+    background-image: url(/pics/portrait/por\ \(14\).jpg);
+    background-size: cover;
+    background-position: center;
+  }.cards .nineteen{
+    background-image: url(/pics/portrait/por\ \(2\).jpeg);
+    background-size: cover;
+  }.cards .twenty{
+    background-image: url(/pics/portrait/por\ \(35\).jpg);
+    background-size: cover;
+  }
+  .cards .tone{
+    background-image: url(/pics/portrait/por\ \(1\).jpg);
+    background-size: cover;
+  }
+  
+  .cards .tfour{
+    background-image: url(/pics/portrait/por\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .cards .tfive{
+    background-image: url(/pics/portrait/por\ \(45\).jpg);
+    background-size: cover;
+  }
+.cards .tsix{
+    background-image: url(/pics/portrait/por\ \(40\).jpg);
+    background-size: cover;
+    background-position: center;
+  }.cards .tseven{
+    background-image: url(/pics/portrait/por\ \(28\).jpg);
+    background-size: cover;
+    background-position: center right 51%;
+  }
+  .cards .teight{
+    background-image: url(/pics/portrait/por\ \(42\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cards .tnine{
+    background-image: url(/pics/portrait/por\ \(43\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .cards .therty{
+    background-image: url(/pics/portrait/por\ \(15\).jpg);
+    background-size: cover;
+    background-position: center;
+  }
+.cards .thone{
+    background-image: url(/pics/portrait/por\ \(39\).jpg);
+    background-size: cover;
+    background-position: right 15%;
+  }.cards .thtwo{
+    background-image: url(/pics/portrait/por\ \(24\).jpg);
+    background-size: cover;
+    background-position-y: bottom;
+  }
+  .cards .ththree{
+    background-image: url(/pics/portrait/por\ \(3\).jpeg);
+    background-size: cover;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: 0.7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(2);
+    z-index: 2;
+    position: relative;
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(0px);
+    transform: scale(0.9);
+  }
